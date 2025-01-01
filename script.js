@@ -3,6 +3,7 @@
 const allButton = document.querySelectorAll("button");
 const display = document.getElementById("display");
 const operationDisplay = document.querySelector(".operation_screen");
+const calcButton = document.getElementById("calc");
 
 // Initialize the display with 0
 display.innerHTML = "0";
@@ -138,4 +139,37 @@ allButton.forEach((button) => {
 
   // Event listener for button click
   button.addEventListener("click", clicked);
+
+  calcButton.addEventListener("click", (event) => {
+    event.stopImmediatePropagation();
+  });
+
+  // Handle AC long press (hold for 0.5 seconds)
+  if (button.dataset.value === "AC") {
+    button.addEventListener("mousedown", () => {
+      // Start the timer when the button is pressed down
+      acPressTimer = setTimeout(() => {
+        // Clear the screen after 0.5 seconds
+        display.innerHTML = "0";
+        operationDisplay.innerHTML = "";
+        lastInputType = "number";
+      }, 100);
+    });
+
+    button.addEventListener("mouseup", () => {
+      // Clear the timer when the button is released
+      if (acPressTimer) {
+        clearTimeout(acPressTimer);
+        acPressTimer = null;
+      }
+    });
+
+    button.addEventListener("mouseleave", () => {
+      // Ensure the timer is cleared if the mouse leaves the button
+      if (acPressTimer) {
+        clearTimeout(acPressTimer);
+        acPressTimer = null;
+      }
+    });
+  }
 });

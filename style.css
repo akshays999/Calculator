@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* background-color:black; */
 }
 
@@ -34,8 +35,8 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 20px;
   font-size: 60px;
+  padding: 0 20px;
   color: white;
 }
 
@@ -103,13 +104,12 @@ button:active {
     width: 352px;
   }
 
-  .type-screen{
-    font-size:50px;
+  .type-screen {
+    font-size: 50px;
   }
 
   .operation_screen {
     font-size: 32px;
-  
   }
 
   .allbtn {
@@ -125,7 +125,7 @@ button:active {
     font-size: 34px;
   }
 
-  .menu{
+  .menu {
     font-size: 22px;
   }
 }
@@ -136,13 +136,12 @@ button:active {
     width: 308px; /* 70% of 440px */
   }
 
-  .type-screen{
-    font-size:38px;
+  .type-screen {
+    font-size: 38px;
   }
 
   .operation_screen {
     font-size: 26px;
-  
   }
 
   .allbtn {
@@ -158,10 +157,9 @@ button:active {
     font-size: 28px;
   }
 
-  .menu{
+  .menu {
     font-size: 18px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -170,13 +168,12 @@ button:active {
     width: 264px; /* 60% of 440px */
   }
 
-  .type-screen{
-    font-size:30px;
+  .type-screen {
+    font-size: 30px;
   }
 
   .operation_screen {
     font-size: 22px;
-  
   }
 
   .allbtn {
@@ -191,8 +188,8 @@ button:active {
   .side {
     font-size: 22px;
   }
-  
-  .menu{
+
+  .menu {
     font-size: 14px;
   }
 }
