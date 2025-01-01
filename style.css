@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color:black; */
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
   flex-direction: column;
   height: 932px;
   width: 440px;
-  border-radius: 3.5rem;
+  border-radius: 2.5rem;
   overflow: hidden;
   position: relative;
 }
@@ -94,4 +95,104 @@ button:active {
   background-color: black;
   color: rgb(144, 74, 0);
   transition: all 0.5;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 746px;
+    width: 352px;
+  }
+
+  .type-screen{
+    font-size:50px;
+  }
+
+  .operation_screen {
+    font-size: 32px;
+  
+  }
+
+  .allbtn {
+    gap: 8px;
+    padding: 8px 16px 40px 16px;
+  }
+
+  button {
+    font-size: 34px;
+  }
+
+  .side {
+    font-size: 34px;
+  }
+
+  .menu{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 652px; /* 70% of 932px */
+    width: 308px; /* 70% of 440px */
+  }
+
+  .type-screen{
+    font-size:38px;
+  }
+
+  .operation_screen {
+    font-size: 26px;
+  
+  }
+
+  .allbtn {
+    gap: 8px;
+    padding: 7px 14px 35px 14px;
+  }
+
+  button {
+    font-size: 28px;
+  }
+
+  .side {
+    font-size: 28px;
+  }
+
+  .menu{
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 559px; /* 60% of 932px */
+    width: 264px; /* 60% of 440px */
+  }
+
+  .type-screen{
+    font-size:30px;
+  }
+
+  .operation_screen {
+    font-size: 22px;
+  
+  }
+
+  .allbtn {
+    gap: 7.5px;
+    padding: 7.5px 15px 37.5px 15px;
+  }
+
+  button {
+    font-size: 22px;
+  }
+
+  .side {
+    font-size: 22px;
+  }
+  
+  .menu{
+    font-size: 14px;
+  }
 }
