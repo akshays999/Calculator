@@ -64,7 +64,7 @@ allButton.forEach((button) => {
         console.error("Invalid expression:", error);
       }
     } else if (addToDisplay === "AC") {
-      // Check if it's a long press (longer than 0.5 seconds)
+      // Check if it's a long press (longer than 0.1 seconds)
       if (acPressTimer) {
         // Clear the entire screen after a long press
         display.innerHTML = "0";
